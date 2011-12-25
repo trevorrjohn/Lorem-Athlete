@@ -23,13 +23,13 @@ class LoremAthlete
       else
         teams = olympic_sport(self.sport)
       end
-    when "football"
+    when "nfl"
       teams = pro_sports_teams["football"]
-    when "basketball"
+    when "nba"
       teams = pro_sports_teams["basketball"]
-    when "hockey"
+    when "nhl"
       teams = pro_sports_teams["hockey"]
-    when "baseball"
+    when "mlb"
       teams = pro_sports_teams["baseball"]
     else
       teams = olympic_sport(sport)

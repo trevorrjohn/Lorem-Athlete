@@ -17,12 +17,9 @@ Generate a team name
 
     LoremAthlete::team
 
-You can specify the sport to get a pro team name for hockey, basketball, football and baseball.
+You can specify a league to get a pro team name for NHL, NBA, NFL and MLB
 
-    LoremAthlete::team("football") # NFL team
-    LoremAthlete::team("basketball") # NBA team
-    LoremAthlete::team("hockey") # NHL team
-    LoremAthlete::team("baseball") # MLB team
+    LoremAthlete::team("NFL") # NFL team
     
 Or if you specify another sport you will get an Olympic team for that sport.
 
