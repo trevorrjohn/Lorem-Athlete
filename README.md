@@ -3,7 +3,7 @@
 
     gem install lorem_athlete
 
-or if you are using rails 3 or higher
+or if you are using rails 3 or higher, add to your gemfile:
 
     gem 'lorem_athlete'
     
