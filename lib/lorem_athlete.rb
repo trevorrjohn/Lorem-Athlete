@@ -8,8 +8,20 @@ class LoremAthlete
     sports[rand(sports.length)]
   end
 
-  def self.athlete
+  def self.athlete(sport='default')
     athletes = YAML::load( File.open('lib/athletes.yml'))
+    case sport.downcase
+    when "nfl"
+      athletes = athletes["nfl"]
+    when "nhl"
+      athletes = athletes["nhl"]
+    when "nba"
+      athletes = athletes["nba"]
+    when "mlb"
+      athletes = athletes["mlb"]
+    else
+      athletes = athletes.map{|k, v| v}.flatten
+    end
     athletes[rand(athletes.length)]
   end
 
