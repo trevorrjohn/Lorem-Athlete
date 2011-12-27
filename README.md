@@ -13,9 +13,10 @@ Generate a sport
 
     LoremAthlete::sport
 
-Generate an athlete's name
+Generate an athlete's name, can specifiy league (NHL, NBA, MLB or NFL) or default will give you a athlete from a random league
 
     LoremAthlete::athlete
+    LoremAthlete::("NHL") # NHL team
 
 Generate a team name
 
