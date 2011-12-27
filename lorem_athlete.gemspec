@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'lorem_athlete'
   s.version = '0.0.2'
-  s.date = '2011-12-25'
+  s.date = '2011-12-27'
   s.authors = ["Samantha John", "Trevor John"]
   s.email = 'trevorrjohn@gmail.com'
   s.summary = 'A gem for generating fake sports data.'
