@@ -8,7 +8,11 @@ or if you are using rails 3 or higher, add to your gemfile:
     gem 'lorem_athlete'
     
 ## Usage
-    
+
+Generate a sport
+
+    LoremAthlete::sport
+
 Generate an athlete's name
 
     LoremAthlete::athlete
