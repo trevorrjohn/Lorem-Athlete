@@ -1,15 +1,15 @@
-require 'YAML'
+require 'yaml'
 lib_path = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib_path)
 class LoremAthlete
-  WORDS = YAML::load(File.open('lib/words.yml'))
+  WORDS = YAML.load_file(File.join(File.dirname(__FILE__),"words.yml"))
   def self.sport
-    sports = YAML::load(File.open('lib/sports.yml'))
+    sports = YAML.load_file(File.join(File.dirname(__FILE__),"sports.yml"))
     sports[rand(sports.length)]
   end
 
   def self.athlete(sport='default')
-    athletes = YAML::load( File.open('lib/athletes.yml'))
+    athletes = YAML.load_file(File.join(File.dirname(__FILE__),"athletes.yml"))
     case sport.downcase
     when "nfl"
       athletes = athletes["nfl"]
@@ -26,7 +26,7 @@ class LoremAthlete
   end
 
   def self.team(sport='all')
-    pro_sports_teams = YAML::load( File.open('lib/teams.yml'))
+    pro_sports_teams = YAML.load_file(File.join(File.dirname(__FILE__),"teams.yml"))
     case sport.downcase
     when "all"
       random_index = rand(2)
@@ -65,7 +65,7 @@ class LoremAthlete
 
   private
   def self.country
-    countries  = YAML::load(File.open("lib/countries.yml"))
+    countries = YAML.load_file(File.join(File.dirname(__FILE__),"countries.yml"))
     countries[rand(countries.length)]
   end
 
